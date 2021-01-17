@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="8dp"
+    app:cardMaxElevation="8dp"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="12dp">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            tools:ignore="ContentDescription"
+            tools:src="@tools:sample/backgrounds/scenic" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="5sp"
+            android:justificationMode="inter_word"
+            android:paddingHorizontal="12dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            tools:ignore="UnusedAttribute"
+            tools:text="E-Flugzeuge, Klima, Bitcoin: Was dieses Jahr auf uns zukommt" />
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="5sp"
+            android:justificationMode="inter_word"
+            android:paddingHorizontal="12dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            tools:ignore="UnusedAttribute"
+            tools:text="2021 wartet mit einer Reihe neuer Entwicklungen auf: gesellschaftspolitisch, ökonomisch und ökologisch. Sechs Trends, die zu beobachten sind" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
