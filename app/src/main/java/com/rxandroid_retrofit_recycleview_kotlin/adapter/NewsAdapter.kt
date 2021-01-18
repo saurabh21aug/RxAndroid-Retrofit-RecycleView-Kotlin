@@ -15,18 +15,18 @@ import kotlinx.android.synthetic.main.item_row.view.*
 
 
 class NewsAdapter(private var contect: Context, private var articleList: ArrayList<Article>) :
-    RecyclerView.Adapter<NewsAdapter.FoodViewHolder>() {
+    RecyclerView.Adapter<NewsAdapter.NewsViewHolder>() {
 
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): FoodViewHolder {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): NewsViewHolder {
         val view =
             LayoutInflater.from(parent.context).inflate(R.layout.item_row, parent, false)
-        return FoodViewHolder(view)
+        return NewsViewHolder(view)
     }
 
     override fun getItemCount(): Int = articleList.size
 
-    override fun onBindViewHolder(holder: FoodViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: NewsViewHolder, position: Int) {
         val article = articleList[position]
         holder.title.text = article.title
         holder.description.text = article.description
@@ -52,7 +52,7 @@ class NewsAdapter(private var contect: Context, private var articleList: ArrayLi
         notifyDataSetChanged()
     }
 
-    inner class FoodViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+    inner class NewsViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
         val title = itemView.title
         val description = itemView.description

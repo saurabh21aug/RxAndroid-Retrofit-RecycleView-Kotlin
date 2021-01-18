@@ -6,7 +6,7 @@ import io.reactivex.rxjava3.core.Observable
 import retrofit2.http.GET
 import retrofit2.http.Query
 
-//http://newsapi.org/v2/everything?q=bitcoin&from=2020-12-16&sortBy=publishedAt&apiKey=82e76a4e6d4540909a9bb6eaca329868
+
 interface Api {
     companion object {
         const val BASE_URL = "https://newsapi.org/"
